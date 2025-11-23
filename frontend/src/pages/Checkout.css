@@ -1,0 +1,169 @@
+/* Checkout.css */
+.checkout-page {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .checkout-page h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .checkout-items {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .checkout-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .checkout-item h3 {
+    font-size: 18px;
+    color: #222;
+    margin-bottom: 5px;
+  }
+  
+  .checkout-item p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .checkout-summary {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .checkout-summary p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .confirm-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .confirm-button:hover {
+    background-color: #0056b3;
+  }
+
+
+
+  /* ✅ Checkout Container */
+.checkout-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* ✅ Title Styling */
+.checkout-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #00246B;
+  margin-bottom: 20px;
+}
+
+/* ✅ Confirmation Message */
+.success-message {
+  background: #d4edda;
+  color: #155724;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 15px 0;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* ✅ Cart Items */
+.checkout-items {
+  padding: 20px;
+}
+
+.checkout-item {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-item h3 {
+  margin: 0;
+  color: #333;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* ✅ Summary Section */
+.checkout-summary {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.total-price {
+  color: #d63384;
+}
+
+/* ✅ Confirm Button */
+.confirm-button {
+  background: #00246B;
+  color: white;
+  font-size: 18px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.confirm-button:hover {
+  background: #0044CC;
+  transform: scale(1.05);
+}
+
+/* ✅ Empty Cart Message */
+.empty-cart {
+  font-size: 20px;
+  color: #dc3545;
+  font-weight: bold;
+}
+
+/* ✅ Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

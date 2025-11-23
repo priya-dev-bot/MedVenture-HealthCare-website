@@ -1,0 +1,285 @@
+/* Overall Container */
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #CADCFC;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Title */
+.register-title {
+    font-family: 'Lily Script One', cursive;
+    font-size: 2rem;
+    color: #00246B;
+    text-align: center;
+    margin-top: 40px;
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Slide-in Animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Form */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background: #FFFFFF;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Form Hover Effect */
+.register-form:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Input Fields */
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+    width: 100%;
+    height: 40px;
+    padding: 0 1rem;
+    font-family: 'Life Savers', cursive;
+    font-size: 1rem;
+    border: 1px solid #ECF3FF;
+    background: #F8FAFF;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Input Field Hover & Focus Effects */
+.register-form input:hover {
+    background: #E9F0FF;
+}
+
+.register-form input:focus {
+    border: 1px solid #00246B;
+    box-shadow: 0 0 8px rgba(0, 36, 107, 0.3);
+}
+
+/* Dropdown */
+.dropdown-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+}
+
+.dropdown-container select {
+    width: 100%;
+    height: 40px;
+    font-family: 'Life Savers', cursive;
+    font-size: 1rem;
+    border: 1px solid #ECF3FF;
+    background: #F8FAFF;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown-container select:hover {
+    background: #E9F0FF;
+}
+
+.dropdown-container select:focus {
+    border: 1px solid #00246B;
+    box-shadow: 0 0 8px rgba(0, 36, 107, 0.3);
+}
+
+/* File Upload */
+.upload-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.upload-container label {
+    font-family: 'Life Savers', cursive;
+    font-size: 1rem;
+    color: #333;
+}
+
+.upload-container input[type="file"] {
+    display: none;
+}
+
+/* Custom File Upload Button */
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-family: 'Life Savers', cursive;
+    color: #FFFFFF;
+    background-color: #00246B;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* File Upload Hover & Active Effect */
+.custom-file-upload:hover {
+    background-color: #0049A5;
+    transform: scale(1.05);
+}
+
+.custom-file-upload:active {
+    background-color: #001A4D;
+    transform: scale(0.95);
+}
+
+/* Image Preview */
+.image-preview-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.uploaded-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #00246B;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image Hover Effect */
+.uploaded-image:hover {
+    transform: rotate(5deg) scale(1.05);
+}
+
+/* Remove Image Button */
+.remove-image-button {
+    font-family: 'Life Savers', cursive;
+    font-size: 0.9rem;
+    color: #FF0000;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.2s;
+}
+
+/* Remove Image Hover Effect */
+.remove-image-button:hover {
+    color: #CC0000;
+    transform: scale(1.1);
+}
+
+/* Sign-Up Button */
+.signup-button {
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+    font-family: 'Life Savers', cursive;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: #00246B;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Sign-Up Button Hover Effect */
+/* Hover Effect */
+.signup-button:hover {
+    background-color: #0049A5; /* Slightly lighter blue */
+    transform: scale(1.05);
+}
+
+
+
+/* Sign-Up Button Active Effect */
+.signup-button:active {
+    background-color: #001A4D;
+    transform: scale(0.95);
+}
+
+/* Login Text */
+.login-text {
+    font-family: 'Life Savers', cursive;
+    font-size: 1rem;
+    color: #000;
+    margin-top: 1rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Login Link */
+.login-link {
+    font-weight: bold;
+    color: #00246B;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.2s;
+}
+
+/* Login Link Hover Effect */
+.login-link:hover {
+    color: #0049A5;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .register-form {
+        padding: 1.5rem;
+    }
+
+    .register-title {
+        font-size: 1.8rem;
+    }
+
+    .register-form input,
+    .dropdown-container select,
+    .signup-button {
+        height: 45px;
+        font-size: 0.9rem;
+    }
+
+    .login-text {
+        font-size: 0.9rem;
+    }
+
+    .dropdown-container {
+        flex-direction: column;
+    }
+}

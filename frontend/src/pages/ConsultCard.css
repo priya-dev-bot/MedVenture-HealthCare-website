@@ -1,0 +1,131 @@
+.consult-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    max-width: 800px; /* Increased width to accommodate the gallery */
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 95px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; /* For positioning the cross button */
+  }
+  
+  .consult-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Cross Button */
+  .cross-button {
+    position: absolute;
+    top: 20px;
+    left: 750px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+  }
+  
+  .cross-button:hover {
+    color: #333;
+  }
+  
+  /* Content Wrapper */
+  .content-wrapper {
+    display: flex;
+    gap: 20px; /* Space between form and gallery */
+  }
+  
+  /* Form Section */
+  .form-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .form-group select,
+  .form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .form-group select {
+    background-color: #fff;
+  }
+  
+  .form-group input::placeholder {
+    color: #999;
+  }
+  
+  .verification-text {
+    font-size: 12px;
+    color: #666;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  
+  .continue-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .continue-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Image Gallery Section */
+  .image-gallery {
+    flex: 1;
+    max-width: 500px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container {
+    text-align: center;
+  }
+  
+  .image-gallery img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    top: 50px;
+  }
+  
+  .image-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Verified Doctors Section */
+  .verified-doctors {
+    margin-top: 20px;
+  }
+  
+  .verified-doctors h3 {
+    font-size: 18px;
+    color: #007bff;
+    margin-bottom: 10px;
+  }

@@ -1,0 +1,141 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: auto;
+  width: 100%;
+}
+/* Footer Styles */
+.footer {
+  background-color: #00246B;
+  color: white;
+  padding: 2rem 1rem;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #CADCFC;
+  border-bottom: 2px solid #CADCFC;
+  padding-bottom: 0.5rem;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: white;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.footer-column li:hover {
+  color: #CADCFC;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #CADCFC;
+  border-top: 1px solid #CADCFC;
+  padding-top: 1rem;
+}
+
+.footer a {
+  color: #CADCFC;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    text-align: center;
+    min-width: 290px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 1rem;
+  }
+
+  .footer-column h4 {
+    font-size: 1rem;
+  }
+
+  .footer-column li {
+    font-size: 0.9rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: #00246B; /* Same as homepage */
+  color: white;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+footer div {
+  flex: 1;
+  margin: 0 1rem;
+}
+
+footer h4 {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid white;
+  padding-bottom: 0.5rem;
+}

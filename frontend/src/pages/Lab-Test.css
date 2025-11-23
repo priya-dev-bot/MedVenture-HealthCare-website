@@ -1,0 +1,353 @@
+.lab-test-page {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+header {
+  position: relative;
+  padding: 10px;
+}
+
+/* Banner Image Styles */
+.banner {
+  width: 100%;
+  margin-top: -15px; /* Adjust margin to avoid overlap with the fixed header */
+}
+
+.banner-image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  max-height: 300px; /* Adjust height as needed */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+
+.cart-icon-container {
+  display:flex;
+  align-items: center;
+  gap: 5px; /* Adjust spacing between the icon and the count */
+}
+
+.cart-icon {
+  margin-left: 1250px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cart-icon:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px;
+}
+
+.cart-count {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+
+.lab-tests-container {
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.tests-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.test-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  width: 220px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.test-card:hover {
+  transform: scale(1.05);
+}
+
+.add-button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #0077cc;
+}
+
+.cart-modal {
+  position: fixed;
+  top: 150px; /* Adjusted so the cart doesn't block the screen */
+  right: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  max-width: 90%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cart-items {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.cart-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-summary {
+  padding-top: 10px;
+}
+
+.checkout-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.checkout-button:hover {
+  background-color: #0056b3;
+}
+
+.close-button {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: darkred;
+}
+
+
+
+/* General styles for the image section */
+.image-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-section h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Featured checkups container */
+.featured-checkups {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Checkup card styles */
+.checkup-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.333% - 40px); /* Three cards in a row with spacing */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.checkup-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Checkup image styles */
+.checkup-image {
+  width: 100%;
+  height: 100%; /* Adjust height as needed */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.checkup-card h3 {
+  font-size: 20px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.checkup-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Price container styles */
+.price-container {
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 10px;
+}
+
+.discounted-price {
+  font-weight: bold;
+  color: #007bff;
+  margin-right: 10px;
+}
+
+.discount {
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* Book Now button styles */
+.book-now {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.book-now:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .featured-checkups {
+    flex-direction: column;
+  }
+
+  .checkup-card {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Popup Background */
+.login-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  padding: 20px;
+  text-align: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Popup Text */
+.login-popup p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.login-popup button {
+  background-color: #00246B;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-popup button:hover {
+  background-color: #001a4d;
+}
+
+/* Close Button */
+.login-popup button:last-child {
+  background-color: #888;
+}
+
+.login-popup button:last-child:hover {
+  background-color: #666;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -45%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Overlay Background */
+.login-popup::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}

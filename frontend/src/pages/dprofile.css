@@ -1,0 +1,192 @@
+/* General styling for the profile container */
+.profile-container {
+    display: flex;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    min-height: 100vh;
+    color: #333;
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    background-color: #00246B;
+    color: white;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+  }
+  
+  .sidebar .profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .sidebar .profile-header img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar .profile-header p {
+    margin: 5px 0;
+  }
+  
+  .sidebar nav {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .sidebar nav button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar nav button:hover {
+    background-color: #1a3d88;
+  }
+  
+  .sidebar nav .active {
+    background-color: #1a3d88;
+    font-weight: bold;
+  }
+  
+  /* Content area styling */
+  .content {
+    flex: 1;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .doctor-profile h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #00246B;
+  }
+  
+  .profile-details {
+    margin-top: 20px;
+  }
+  
+  .profile-details p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .profile-details strong {
+    color: #00246B;
+  }
+  
+  /* Appointments section */
+  .appointment-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .appointment-item {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .appointment-item p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .appointment-item strong {
+    color: #00246B;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    resize: vertical;
+    outline: none;
+  }
+  
+  textarea:focus {
+    border-color: #1a3d88;
+  }
+  
+  button {
+    background-color: #00246B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #1a3d88;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .profile-container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      height: auto;
+      box-shadow: none;
+    }
+  
+    .content {
+      margin: 20px 0;
+    }
+  
+    .sidebar nav button {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile-header img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .profile-details p {
+      font-size: 16px;
+    }
+  
+    button {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  

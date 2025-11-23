@@ -1,0 +1,348 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: auto;
+  width: 100%;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+  padding-top: 70px; /* Adjust this value to match the header height */
+  margin: 0; /* Remove any default margin */
+  width: 100%;
+}
+
+.container {
+  display: flex; /* Enables side-by-side layout */
+  justify-content: space-between; /* Pushes text and image to opposite sides */
+  align-items: center; /* Vertically aligns content */
+  gap: 2rem; /* Adds spacing between text and image */
+  padding: 2rem;
+}
+
+h1{
+  margin-top: 70px;
+  text-align: left;
+  size: 35px;
+  font-style: italic;
+  
+}
+
+.image {
+  flex: 1; /* Allows the image section to take up available space */
+  display: flex;
+  justify-content: flex-end; /* Pushes the image to the right */
+  width: 100%;
+  
+}
+
+.img img {
+  width: 520px; /* Set image width */
+  height: 100%; /* Set image height to 100% */
+  border-radius: 8px; /* Rounded corners */
+  margin-right: 0px;
+}
+
+
+/* Card Container Section */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center-align cards */
+  gap: 4rem; /* Space between cards */
+  padding: 2rem 1rem;
+}
+
+.card {
+  background-color: #CADCFC;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1.5rem;
+  width: 250px; /* Fixed width for cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #00246B;
+  font-weight: bold;
+}
+
+/* Card Hover Effects */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Testimonials Section */
+.testimonials {
+  background-color: #ffffff;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  overflow: hidden; /* Prevents overflow during scrolling */
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  color: #00246B;
+  margin-bottom: 2rem;
+}
+
+.testimonial-container {
+  display: inline-flex;
+  animation: scroll-left 15s linear infinite; /* Smooth scrolling animation */
+}
+
+.testimonial-card {
+  max-width: 700px;
+  margin: 0 10px;
+  padding: 1.5rem;
+  background-color: #CADCFC;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Ensures proper alignment */
+}
+
+.testimonial-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/*specialist part*/
+.specialists {
+  background-color: #F9FAFB;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.specialists h2 {
+  font-size: 2rem;
+  color: #00246B;
+  margin-bottom: 2rem;
+}
+
+.specialist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.5rem;
+  justify-items: center;
+}
+
+.specialist-card {
+  max-width: 290px;
+  background-color: #CADCFC;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.specialist-card img {
+  width: 190px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.specialist-card h3 {
+  font-size: 1.2rem;
+  color: #00246B;
+  margin-bottom: 0.5rem;
+}
+
+.specialist-card p {
+  font-size: 1rem;
+  color: #333;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #00246B;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column; /* Stack text and image vertically */
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .text h1 {
+    font-size: 2rem;
+  }
+
+  .text p {
+    font-size: 1rem;
+  }
+
+  .image img {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column; /* Cards stack vertically */
+  }
+
+  .card {
+    width: 80%; /* Cards take up more space on smaller screens */
+    margin: 0 auto;
+  }
+
+  .text h1 {
+    font-size: 1.8rem;
+  }
+
+  .image img {
+    max-width: 350px;
+  }
+
+  .testimonial-card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .text h1 {
+    font-size: 1.5rem; /* Smaller text size */
+  }
+
+  .text p {
+    font-size: 0.9rem;
+  }
+
+  .image img {
+    max-width: 90%; /* Image takes up most of the screen */
+  }
+
+  .card {
+    width: 100%; /* Cards take full width */
+    padding: 1rem;
+  }
+
+
+  
+
+
+  .about-section {
+    background-color: #FFFFFF;
+    padding: 40px 20px;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .about-text {
+    flex: 1 1 50%;
+    max-width: 600px;
+  }
+  
+  .about-text h2 {
+    color: #00246B;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .accordion-item {
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .accordion-header {
+    display: block;
+    background: #F8F8F8;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #00246B;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .accordion-header:hover {
+    background: #E8E8E8;
+  }
+  
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    font-size: 0.9rem;
+    color: #4A4A4A;
+    transition: max-height 0.3s ease;
+  }
+  
+  .accordion-content p {
+    margin: 10px 0;
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  input[type="checkbox"]:checked ~ .accordion-content {
+    max-height: 100px; /* Adjust to fit the content */
+    padding: 10px 15px;
+  }
+  
+  .about-image {
+    flex: 1 1 40%;
+    max-width: 500px;
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+
+  .footer {
+    font-size: 0.9rem;
+  }
+}

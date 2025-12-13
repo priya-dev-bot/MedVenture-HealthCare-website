@@ -5,7 +5,7 @@
   position: fixed; /* Fix it to the top */
   top: 0; /* Align at the top of the viewport */
   left: 0; /* Align to the left of the viewport */
-  z-index: 1000; /* Ensure it appears above all other elements */
+  z-index:1000;; /* Ensure it appears above all other elements */
   display: flex;
   justify-content: center;
   padding: 10px 0;
@@ -24,7 +24,7 @@
 }
 
 .logo:hover {
-  transform: scale(1.1); /* Slight zoom effect */
+  transform: scale(1.4); /* Slight zoom effect */
 }
 
 
@@ -82,8 +82,8 @@ header {
 }
 
 .user-image {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -92,11 +92,11 @@ header {
   position: absolute;
   top: 45px;
   right: 0;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(61, 61, 61);
   color: black;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 6px rgba(103, 103, 103, 0.2);
   border-radius: 5px;
-  min-width: 150px;
+  min-width: 120px;
   z-index: 10;
 }
 
